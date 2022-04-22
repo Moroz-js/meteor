@@ -12,13 +12,20 @@ html {
   height: 100%;
   font-family: $font-family, sans-serif;
   -webkit-text-size-adjust: 100%;
+
+}
+
+li {
+  list-style-type: none;
 }
 
 .page__body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 19px;
 }
 
 img {
@@ -36,7 +43,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
