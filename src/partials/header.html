@@ -20,6 +20,54 @@
         </div>
       </div>
     </div>
-  </div>
-</header>
+    <div class="home-tick">
+      <div class="home__ticket">
+        <div class="hero-holder">
+          <form action="#" class="ticket-form">
+            <div class="field-row">
+              <div class="form-field form-field-1">
+                <label class="label">дата</label>
+                <input type="text" class="input datepicker" id="date_ext" placeholder="">
+              </div>
+              <div class="form-field form-field-2" style="overflow: hidden;">
+                <label class="label">направление</label>
+                <div class="select-holder">
+                  <select class="select-drop" id="destination_ext">
+                    <option value="1">Санкт-Петербург – Петергоф</option>
+                    <option value="2">Петергоф – Санкт-Петербург</option>
+                    <option value="3">Санкт-Петербург – Петергоф – Санкт-Петербург</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field form-field-3">
+                <label class="label">кол-во пассажиров</label>
+                <div class="counter">
+                  <a href="#" class="minus">-</a>
+                  <input type="text" id="category_1_ext" value="1" data-min="1" data-max="999999">
+                  <a href="#" class="plus">+</a>
+                </div>
+              </div>
+              <!-- <div class="form-field">
+                <label class="label">Тариф</label>
+                <div class="select-holder">
+                  <select class="select-drop" id="destination_ext2">
+                    <option value="1">Стандарт</option>
 
+                    <option value="2">Комфорт</option>
+                    <option value="3">Детский от 2 лет</option>
+
+                    <option value="4">Детский до 14 лет</option>
+                  </select>
+                </div>
+              </div> -->
+              <div class="form-btn">
+                <a data-fancybox="" data-src="#buy-ticket" class="btn btn-default">купить билет</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
