@@ -181,9 +181,10 @@
       </div>
     </div>
 
-
-    <div class="swiper_cost">
+    @include('swiper-cost.html')
+    <!-- <div class="swiper_cost">
       <div class="cost__wrapper-adaptive">
+        <div class="cost__adaptive-name-title">Полный</div>
         <div class="cost__adaptive-item">
           <div class="cost__adaptive-category">
             <div class="adaptive__category-name">
@@ -222,6 +223,7 @@
             </div>
           </div>
         </div>
+        <div class="cost__adaptive-name-title">Льготный 1</div>
         <div class="cost__adaptive-item">
           <div class="cost__adaptive-category">
             <div class="adaptive__category-name">
@@ -261,6 +263,7 @@
             </div>
           </div>
         </div>
+        <div class="cost__adaptive-name-title">Льготный 2</div>
         <div class="cost__adaptive-item">
           <div class="cost__adaptive-category">
             <div class="adaptive__category-name">
@@ -300,6 +303,7 @@
             </div>
           </div>
         </div>
+        <div class="cost__adaptive-name-title">Льготный 3</div>
         <div class="cost__adaptive-item">
           <div class="cost__adaptive-category">
             <div class="adaptive__category-name">
@@ -339,6 +343,7 @@
             </div>
           </div>
         </div>
+        <div class="cost__adaptive-name-title">Льготный 4</div>
         <div class="cost__adaptive-item">
           <div class="cost__adaptive-category">
             <div class="adaptive__category-name">
@@ -381,7 +386,33 @@
           </div>
         </div>
       </div>
-    </div>
+      <div class="cost__adaptive-name-title">Полный</div>
+      <div class="cost__adaptive-all">
+        <div class="cost__adaptive-all-block">
+          <div class="cost__adaptive-all-title">Полный</div>
+          <div class="cost__adaptive-all-text">Граждане РФ</div>
+          <div class="cost__adaptive-all-text">Граждане иностранных государств</div>
+        </div>
+        <div class="cost__adaptive-all-block">
+          <div class="cost__adaptive-all-title">Льготный 1</div>
+          <div class="cost__adaptive-all-text">Пенсионеры</div>
+        </div>
+        <div class="cost__adaptive-all-block">
+          <div class="cost__adaptive-all-title">Льготный 2</div>
+          <div class="cost__adaptive-all-text">Дети от 5 до 10 лет</div>
+        </div>
+        <div class="cost__adaptive-all-block">
+          <div class="cost__adaptive-all-title">Льготный 3</div>
+          <div class="cost__adaptive-all-text">Дети до 5 лет</div>
+        </div>
+        <div class="cost__adaptive-all-block">
+          <div class="cost__adaptive-all-title">Льготный 4</div>
+          <div class="cost__adaptive-all-text">Жители блокадного Лениграда</div>
+          <div class="cost__adaptive-all-text">Ветераны ВОВ</div>
+        </div>
+
+      </div>
+    </div> -->
     <div class="category__text-wrapper">
       <div class="text-category">По предварительному заказу мы можем организовать для вас прогулку: Стрельна (30 мин);
         Кронштадт (45 мин).
@@ -653,7 +684,7 @@
   <div class="container">
     <div class="why__title">Галерея</div>
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper gallery-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -726,26 +757,26 @@
           условиях!</div>
       </div>
       <div class="cooperation__form">
-        <form action="#" method="post">
+        <form action="#" method="post" id="feedback">
           <div class="txt-field">
-            <input type="text" required placeholder="Имя">
+            <input type="text" name='name' required placeholder="Имя">
 
           </div>
           <div class="txt-field">
-            <input type="tel" required placeholder="Телефон">
+            <input type="tel" class="phone-field" required name='phone' required placeholder="Телефон">
 
           </div>
 
           <div class="txt-field">
-            <input type="email" required placeholder="E-mail">
+            <input type="email" name='email' required placeholder="E-mail">
 
           </div>
 
-          <textarea class="txtar" placeholder="Сообщение"></textarea>
+          <textarea class="txtar" name='message' placeholder="Сообщение"></textarea>
 
           <div class="cooperation__checkbox">
             <label>
-              <input class="check-box" type="checkbox">
+              <input class="check-box" name='agree' type="checkbox">
               <span class="check-style"></span>
               <div class="check-text">Согласие на обработку персональных данных</div>
             </label>
@@ -839,7 +870,7 @@
             Новороссийском, Сочи, Геленджиком, а также открывают новое направление этого года Сочи — Сухум.
           </div>
         </div>
-        <svg class="project-arrow" width="21" height="21" viewBox="0 0 21 21" fill="none"
+        <svg class="project-arrow project-arrow-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M19.6667 -0.000122547L19.6667 14.6665" stroke="#101010" stroke-width="2.66666" />
           <path d="M20.9994 1.33301L6.33276 1.33301" stroke="#101010" stroke-width="2.66666" />
@@ -873,3 +904,12 @@
     </div>
   </div>
 </section>
+
+
+
+<div class="modal__feedback">
+  <div class="modal__feedback-content">
+    <div class="modal__feedback-content_title">Спасибо, ваше сообщение успешно отправлено!</div>
+    <div class="modal__feedback-content_subtitle">Скоро мы свяжемся с вами!</div>
+  </div>
+</div>
