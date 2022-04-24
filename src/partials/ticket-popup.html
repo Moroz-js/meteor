@@ -2,15 +2,15 @@
 <div style="display: none;" id="buy-ticket" class="modal-content" tabindex="1">
   <form action="#" class="buy-ticket-form" id="buy-ticket-form" method="post">
     <h2 class="h2 text-mark">Покупка билета</h2>
-    <div class="form-row">
+    <div class="form-row form-row-1">
       <div class="item first-width">
-        <div class="form-field">
-          <label class="label">дата</label>
+        <div class="form-field-1">
+          <label class="label label-red">дата</label>
           <div class="datepicker-input">
             <input type="text" class="input datepicker" id="date_popup" name="date" placeholder="22-04-2022">
           </div>
         </div>
-        <label class="label">Время</label>
+        <label class="label label-red label-red-time">Время</label>
         <div class="field-group">
           <div class="field-item field-item-to">
             <div class="select-holder is-icon-left">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="item second-width">
-        <label class="label">направление</label>
+        <label class="label label-red">направление</label>
         <div class="check-list destination-list">
           <div class="item item-1">
             <label class="checkbox-holder">
@@ -53,93 +53,100 @@
         </div>
       </div>
     </div>
-    <div class="form-field">
+    <div class="form-field form-field-2">
       <div class="tariff-block">
-        <label class="label">тариф стандарт</label>
-        <div class="check-list tariff-list">
-          <div class="item">
-            <div class="flex-inner">
-              <label class="checkbox-holder">
-                <!--							<input type="radio" name="tariff" value="1" checked>-->
-                <span>&nbsp;</span>
-                <span>Полный</span>
-              </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Граждане РФ и иностранных государств" class="tooltip-button">?</span>
+        <label class="label label-red tarif-label-red ">тариф стандарт</>
+          <div class="check-list tariff-list">
+            <div class="item item-popup-flex">
+              <div class="flex-inner">
+                <label class="checkbox-holder check-hold">
+                  <!--							<input type="radio" name="tariff" value="1" checked>-->
+                  <span>&nbsp;</span>
+                  <span class="poln">Полный</span>
+                </label>
+                <span data-tippy-placement="left-start" data-tippy-content="Граждане РФ и иностранных государств"
+                  class="tooltip-button">?</span>
+              </div>
+              <div class="counter">
+                <a href="#" class="minus">-</a>
+                <input type="text" value="1" name="category_1" data-tariff="1" data-min="0" data-max="100">
+                <a href="#" class="plus">+</a>
+              </div>
             </div>
-            <div class="counter">
-              <a href="#" class="minus">-</a>
-              <input type="text" value="1" name="category_1" data-tariff="1" data-min="0" data-max="100">
-              <a href="#" class="plus">+</a>
+            <div class="item item-popup-flex">
+              <div class="flex-inner">
+                <label class="checkbox-holder check-hold">
+                  <span>&nbsp;</span>
+                  <span>Льготный 1</span>
+                </label>
+                <span data-tippy-placement="left-start" data-tippy-content="Пенсионеры" class="tooltip-button">?</span>
+              </div>
+              <div class="counter">
+                <a href="#" class="minus">-</a>
+                <input type="text" value="0" name="category_2" data-tariff="2" data-min="0" data-max="100">
+                <a href="#" class="plus">+</a>
+              </div>
+            </div>
+            <div class="item item-popup-flex">
+              <div class="flex-inner">
+                <label class="checkbox-holder check-hold">
+                  <span>&nbsp;</span>
+                  <span>Льготный 2</span>
+                </label>
+                <span data-tippy-placement="left-start" data-tippy-content="Дети до 10 лет"
+                  class="tooltip-button">?</span>
+              </div>
+              <div class="counter">
+                <a href="#" class="minus">-</a>
+                <input type="text" value="0" name="category_3" data-tariff="3" data-min="0" data-max="100">
+                <a href="#" class="plus">+</a>
+              </div>
+            </div>
+            <div class="item item-popup-flex">
+              <div class="flex-inner">
+                <label class="checkbox-holder check-hold">
+                  <span>&nbsp;</span>
+                  <span>Льготный 3</span>
+                </label>
+                <span data-tippy-placement="left-start"
+                  data-tippy-content="Дети до 5 лет (бесплатно, без предоставления места)"
+                  class="tooltip-button">?</span>
+              </div>
+              <div class="counter">
+                <a href="#" class="minus">-</a>
+                <input type="text" value="0" name="category_4" data-tariff="12" required data-min="1" data-max="100">
+                <a href="#" class="plus">+</a>
+              </div>
+            </div>
+            <div class="item item-popup-flex">
+              <div class="flex-inner">
+                <label class="checkbox-holder check-hold">
+                  <span>&nbsp;</span>
+                  <span>Льготный 4</span>
+                </label>
+                <span data-tippy-placement="left-start"
+                  data-tippy-content="Жители блокадного Ленинграда и ветераны ВОВ (бесплатно)"
+                  class="tooltip-button">?</span>
+              </div>
+              <div class="counter">
+                <a href="#" class="minus">-</a>
+                <input type="text" value="0" name="category_4" data-tariff="13" required data-min="1" data-max="100">
+                <a href="#" class="plus">+</a>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div class="flex-inner">
-              <label class="checkbox-holder">
-                <span>&nbsp;</span>
-                <span>Льготный 1</span>
-              </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Пенсионеры" class="tooltip-button">?</span>
-            </div>
-            <div class="counter">
-              <a href="#" class="minus">-</a>
-              <input type="text" value="0" name="category_2" data-tariff="2" data-min="0" data-max="100">
-              <a href="#" class="plus">+</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="flex-inner">
-              <label class="checkbox-holder">
-                <span>&nbsp;</span>
-                <span>Льготный 2</span>
-              </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Дети до 10 лет" class="tooltip-button">?</span>
-            </div>
-            <div class="counter">
-              <a href="#" class="minus">-</a>
-              <input type="text" value="0" name="category_3" data-tariff="3" data-min="0" data-max="100">
-              <a href="#" class="plus">+</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="flex-inner">
-              <label class="checkbox-holder">
-                <span>&nbsp;</span>
-                <span>Льготный 3</span>
-              </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Дети до 5 лет (бесплатно, без предоставления места)" class="tooltip-button">?</span>
-            </div>
-            <div class="counter">
-              <a href="#" class="minus">-</a>
-              <input type="text" value="0" name="category_4" data-tariff="12" required data-min="1" data-max="100">
-              <a href="#" class="plus">+</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="flex-inner">
-              <label class="checkbox-holder">
-                <span>&nbsp;</span>
-                <span>Льготный 4</span>
-              </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Жители блокадного Ленинграда и ветераны ВОВ (бесплатно)" class="tooltip-button">?</span>
-            </div>
-            <div class="counter">
-              <a href="#" class="minus">-</a>
-              <input type="text" value="0" name="category_4" data-tariff="13" required data-min="1" data-max="100">
-              <a href="#" class="plus">+</a>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="end-tariff tariff-block">
-        <label class="label">тариф комфорт</label>
+        <label class="label label-red tarif-label-red">тариф комфорт</label>
         <div class="check-list tariff-list">
-          <div class="item">
+          <div class="item item-popup-flex">
             <div class="flex-inner">
-              <label class="checkbox-holder">
+              <label class="checkbox-holder check-hold">
                 <span>&nbsp;</span>
-                <span>Полный</span>
+                <span class="poln">Полный</span>
               </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Граждане РФ и иностранных государств" class="tooltip-button">?</span>
+              <span data-tippy-placement="left-start" data-tippy-content="Граждане РФ и иностранных государств"
+                class="tooltip-button">?</span>
             </div>
             <div class="counter">
               <a href="#" class="minus">-</a>
@@ -147,9 +154,9 @@
               <a href="#" class="plus">+</a>
             </div>
           </div>
-          <div class="item">
+          <div class="item item-popup-flex">
             <div class="flex-inner">
-              <label class="checkbox-holder">
+              <label class="checkbox-holder check-hold">
                 <span>&nbsp;</span>
                 <span>Льготный 1</span>
               </label>
@@ -161,13 +168,14 @@
               <a href="#" class="plus">+</a>
             </div>
           </div>
-          <div class="item">
+          <div class="item item-popup-flex">
             <div class="flex-inner">
-              <label class="checkbox-holder">
+              <label class="checkbox-holder check-hold">
                 <span>&nbsp;</span>
                 <span>Льготный 2</span>
               </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Дети до 10 лет" class="tooltip-button">?</span>
+              <span data-tippy-placement="left-start" data-tippy-content="Дети до 10 лет"
+                class="tooltip-button">?</span>
             </div>
             <div class="counter">
               <a href="#" class="minus">-</a>
@@ -175,13 +183,14 @@
               <a href="#" class="plus">+</a>
             </div>
           </div>
-          <div class="item">
+          <div class="item item-popup-flex">
             <div class="flex-inner">
-              <label class="checkbox-holder">
+              <label class="checkbox-holder check-hold">
                 <span>&nbsp;</span>
                 <span>Льготный 3</span>
               </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Дети до 5 лет (бесплатно, без предоставления места)" class="tooltip-button">?</span>
+              <span data-tippy-placement="left-start"
+                data-tippy-content="Дети до 5 лет (бесплатно, без предоставления места)" class="tooltip-button">?</span>
             </div>
             <div class="counter">
               <a href="#" class="minus">-</a>
@@ -189,13 +198,15 @@
               <a href="#" class="plus">+</a>
             </div>
           </div>
-          <div class="item">
+          <div class="item item-popup-flex">
             <div class="flex-inner">
-              <label class="checkbox-holder">
+              <label class="checkbox-holder check-hold">
                 <span>&nbsp;</span>
                 <span>Льготный 4</span>
               </label>
-              <span data-tippy-placement="left-start" data-tippy-content="Жители блокадного Ленинграда и ветераны ВОВ (бесплатно)" class="tooltip-button">?</span>
+              <span data-tippy-placement="left-start"
+                data-tippy-content="Жители блокадного Ленинграда и ветераны ВОВ (бесплатно)"
+                class="tooltip-button">?</span>
             </div>
             <div class="counter">
               <a href="#" class="minus">-</a>
