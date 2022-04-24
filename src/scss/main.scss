@@ -135,21 +135,58 @@ select {
   background: #fff;
   padding: 16px;
   margin-right: 5px;
-  height: 113px;
+  height: 90px;
   box-shadow: 0px 4px 4px rgb(219 219 219 / 11%);
   border-radius: 5px;
 
 }
 
+.select2-selection.select2-selection--single {
+  border: none;
+}
+
+
+.form-field.form-field-1 {
+  width: 20%;
+}
+
+.form-field.form-field-2 {
+  padding: 0;
+
+}
+
+.form-field.form-field-3 {
+  width: 40%;
+}
+
+.form-field.form-field-2 .label {
+  margin-top: 14px;
+  margin-left: 27px;
+}
+
+
+
 .label {
   display: block;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.16em;
+  color: #101010;
   margin-bottom: 5px;
-  color: #962344;
+}
+
+.select2-selection__arrow {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: none;
+}
+
+.form-field-2 .select2-container {
+  padding: 16px;
 }
 
 .ticket-form .form-field input.input {
@@ -163,11 +200,38 @@ select {
   appearance: none;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #101010;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  text-overflow: ellipsis;
+
+}
+
+
+.select2-results__option[aria-selected]::before {
+  content: "";
+  border: 1px solid #101010;
+  width: 9px;
+  height: 9px;
+}
+
+
+.input.datepicker {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #101010;
+}
+
 
 .ticket-form .form-btn .btn {
-
-  min-height: 113px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .form-btn {
@@ -177,7 +241,7 @@ select {
     display: inline-block;
     font-size: 20px;
     line-height: 130%;
-    padding: 37px;
+    padding: 32px;
     letter-spacing: 0.085em;
     font-weight: 500;
     text-align: center;
@@ -1519,6 +1583,24 @@ textarea::placeholder {
   }
 }
 
+@media (max-width:1482px) {
+  .form-field.form-field-2 {
+    width: 428px;
+  }
+
+  .select2-selection.select2-selection--single {
+    width: 384px;
+  }
+
+  .form-field.form-field-3 {
+    width: 20%;
+  }
+
+  .select2-dropdown.select-drop-open.select2-dropdown--below {
+    width: 427px !important;
+  }
+}
+
 @media (max-width:1468px) {
   .project__item-border::before {
     width: 63%;
@@ -1591,6 +1673,16 @@ textarea::placeholder {
   .news__info-text {
     max-width: 42%;
   }
+}
+
+@media (max-width: 1354px) {
+  .header {
+    .form-btn {
+      min-width: 235px;
+    }
+  }
+
+
 }
 
 @media (max-width: 1345px) {
@@ -1682,6 +1774,17 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 1248px) {
+  .ticket-form .form-btn .btn {
+    width: 89%;
+
+  }
+
+  .form-field.form-field-1 {
+    width: 14%;
+  }
+}
+
 @media (max-width: 1245px) {
   .project__item-border::before {
     width: 55%;
@@ -1740,6 +1843,32 @@ textarea::placeholder {
 
   .project__item-border::after {
     width: 53%;
+  }
+}
+
+@media (max-width: 1192px) {
+  .form-field.form-field-2 {
+    width: 301px;
+  }
+
+  .select2-selection.select2-selection--single {
+    width: 277px;
+  }
+
+  .select2-dropdown.select-drop-open.select2-dropdown--below {
+    width: 301px !important;
+  }
+
+  .form-field.form-field-1 {
+    width: 19%;
+  }
+
+  .form-field.form-field-3 {
+    width: 25%;
+  }
+
+  .ticket-form .form-btn .btn {
+    width: 100%;
   }
 }
 
@@ -1889,6 +2018,18 @@ textarea::placeholder {
   .project__item-border::after {
     width: 47%;
   }
+
+  .form-field.form-field-2 {
+    width: 263px;
+  }
+
+  .select2-selection.select2-selection--single {
+    width: 228px;
+  }
+
+  .select2-dropdown.select-drop-open.select2-dropdown--below {
+    width: 263px !important;
+  }
 }
 
 @media (max-width: 1075px) {
@@ -1937,6 +2078,12 @@ textarea::placeholder {
 @media (max-width: 1031px) {
   .why__item-title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 1029px) {
+  .ticket-form .form-btn .btn {
+    width: 93%;
   }
 }
 
@@ -2076,6 +2223,43 @@ textarea::placeholder {
   .footer__img-1 {
     display: block;
 
+  }
+
+  .ticket-form .field-row {
+    display: block;
+    text-align: center;
+  }
+
+  .form-field.form-field-1 {
+    width: 100%;
+  }
+
+  .form-field.form-field-2 {
+    width: 100%;
+  }
+
+  .select2-selection.select2-selection--single {
+    width: 100%;
+  }
+
+  .form-field.form-field-3 {
+    width: 100%;
+  }
+
+  .ticket-form .form-btn .btn {
+    width: 100%;
+  }
+
+  .ticket-form .form-field {
+    margin-bottom: 5px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__contacts-number {
+    display: none;
   }
 }
 
@@ -2318,6 +2502,10 @@ textarea::placeholder {
       height: 300px;
     }
   }
+
+  .form-field-2 .select2-container {
+    width: 100% !important;
+  }
 }
 
 
@@ -2357,6 +2545,12 @@ textarea::placeholder {
   .info__number-text {
     margin-top: 10px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 628px) {
+  .header__logo img {
+    max-width: 71%;
   }
 }
 
@@ -2494,11 +2688,21 @@ textarea::placeholder {
   .prarr {
     bottom: 95px;
   }
+
+  .header__logo img {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 401px) {
   .project-arrow-2 {
     bottom: 151px;
+  }
+}
+
+@media (max-width: 389px) {
+  .header__contacts-ticket .btn-header {
+    padding: 12px 39px;
   }
 }
 
@@ -2515,6 +2719,14 @@ textarea::placeholder {
 
   .prarr {
     bottom: 95px;
+  }
+
+  .header__logo {
+    max-width: 38%;
+
+    img {
+      max-width: 76%;
+    }
   }
 }
 
