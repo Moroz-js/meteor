@@ -67,6 +67,7 @@
   background-color: #B5234D;
   transition: all 0.3s ease-in-out;
 }
+
 // pop-up
 
 .fancybox-content {
@@ -290,6 +291,10 @@ label.label.label-red {
   margin-bottom: 40px;
 }
 
+.item-popup-flex .flex-inner {
+  line-height: 30px
+}
+
 .tooltip-button {
   border: 1px solid #C4C4C4;
   border-radius: 50%;
@@ -378,6 +383,10 @@ select {
 
 .select2-selection.select2-selection--single {
   border: none;
+}
+
+.daterangepicker {
+  z-index: 555555555;
 }
 
 .form-field.form-field-1 {
@@ -544,6 +553,7 @@ select {
   text-align: center;
   background: transparent;
 }
+
 // attention
 
 .attention__wrapper {
@@ -562,6 +572,7 @@ select {
   line-height: 130%;
   color: #FFFFFF;
 }
+
 // news
 
 .news__title {
@@ -593,6 +604,7 @@ select {
   color: #101010;
   max-width: 34%;
 }
+
 // why
 
 .why__title {
@@ -630,6 +642,7 @@ select {
   color: #101010;
   margin-top: 10px;
 }
+
 // meaning
 
 .meaning__wrapper {
@@ -709,6 +722,7 @@ select {
 .meaning_img {
   margin-top: 100px;
 }
+
 // cost
 
 .cost {
@@ -872,6 +886,7 @@ select {
   max-width: 30%;
   margin-right: 32px;
 }
+
 // rates
 
 .rates__wrapper {
@@ -957,6 +972,7 @@ select {
   align-items: center;
   margin-top: 40px;
 }
+
 // important
 
 .important {
@@ -997,6 +1013,7 @@ select {
     }
   }
 }
+
 // questions
 
 .questions__wrapper {
@@ -1102,8 +1119,8 @@ select {
 }
 
 .swiper-slide-prev {
-  width: 900px !important;
-  transition: all 0.3s ease-in-out!important;
+  width: 60% !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .swiper-slide {
@@ -1194,6 +1211,7 @@ select {
 .menu-btn.active .menu-btn__plus::before {
   transform: rotate(180deg);
 }
+
 // gallery
 
 .gallery {
@@ -1207,10 +1225,11 @@ select {
 .swiper-btn {
   position: absolute;
   z-index: 10;
-  top: 19rem;
-  right: 23rem;
+  top: 11%;
+  left: 57%;
   cursor: pointer;
 }
+
 // form
 
 .cooperation__info {
@@ -1340,7 +1359,7 @@ textarea::placeholder {
   color: #626262;
 }
 
-.check-box:checked ~ .check-style::before {
+.check-box:checked~.check-style::before {
   content: "";
   width: 11px;
   height: 11px;
@@ -1366,6 +1385,7 @@ textarea::placeholder {
   line-height: 135%;
   color: #101010;
 }
+
 // location
 
 .location__item-title {
@@ -1403,6 +1423,7 @@ textarea::placeholder {
   margin-top: 17px;
   filter: grayscale(100%);
 }
+
 // project
 
 .project__wrapper {
@@ -1419,6 +1440,7 @@ textarea::placeholder {
     max-width: 453px;
     max-height: 294px;
   }
+
   margin-right: 20px;
 }
 
@@ -1486,6 +1508,7 @@ textarea::placeholder {
 .project__item-3 {
   position: relative;
 }
+
 // footer
 
 .footer {
@@ -1628,12 +1651,14 @@ textarea::placeholder {
 .cost__wrapper-adaptive {
   margin-top: 40px;
 }
+
 // media
 @media (max-width: 1664px) {
   .project-arrow {
     min-width: 14px;
   }
 }
+
 @media (max-width: 1655px) {
   .project__item-border::before {
     right: -26px;
@@ -1643,6 +1668,7 @@ textarea::placeholder {
     right: -26px;
   }
 }
+
 @media (max-width: 1609px) {
   .project__item-border::before {
     width: 67%;
@@ -1652,6 +1678,7 @@ textarea::placeholder {
     width: 67%;
   }
 }
+
 @media (max-width: 1605px) {
   .category_benefits {
     margin-right: 59px;
@@ -1665,6 +1692,7 @@ textarea::placeholder {
     margin-top: 21px;
   }
 }
+
 @media (max-width: 1550px) {
   .news__title {
     font-size: 70px;
@@ -1678,34 +1706,27 @@ textarea::placeholder {
     width: 65%;
   }
 }
+
 @media (max-width: 1519px) {
   .meaning__info-title {
     font-size: 30px;
   }
 }
+
 @media (max-width:1516px) {
   .important__info-title {
     max-width: 100%;
   }
 }
+
 @media (max-width:1492px) {
   .location__item-title {
     font-size: 30px;
   }
 }
-@media (max-width:1482px) {
-  .form-field.form-field-2 {
-    width: 428px;
-  }
 
-  .select2-selection.select2-selection--single {
-    width: 384px;
-  }
+@media (max-width:1482px) {}
 
-  .form-field.form-field-3 {
-    width: 20%;
-  }
-}
 @media (max-width:1468px) {
   .project__item-border::before {
     width: 63%;
@@ -1715,6 +1736,7 @@ textarea::placeholder {
     width: 63%;
   }
 }
+
 @media (max-width:1452px) {
   .cost__wrapper {
     padding: 20px;
@@ -1736,6 +1758,7 @@ textarea::placeholder {
     top: 23rem;
   }
 }
+
 @media (max-width:1415px) {
   .project__info-title a {
     font-size: 30px;
@@ -1749,6 +1772,7 @@ textarea::placeholder {
     width: 61%;
   }
 }
+
 @media (max-width:1412px) {
   .category__money-name {
     font-size: 13px;
@@ -1758,6 +1782,7 @@ textarea::placeholder {
     margin-top: 64px;
   }
 }
+
 @media (max-width:1386px) {
   .news__title {
     font-size: 60px;
@@ -1774,6 +1799,7 @@ textarea::placeholder {
     max-width: 42%;
   }
 }
+
 @media (max-width: 1354px) {
   .header {
     .form-btn {
@@ -1781,6 +1807,7 @@ textarea::placeholder {
     }
   }
 }
+
 @media (max-width: 1345px) {
   .project__item-border::before {
     width: 59%;
@@ -1790,6 +1817,7 @@ textarea::placeholder {
     width: 59%;
   }
 }
+
 @media (max-width: 1327px) {
   .meaning__info-title {
     max-width: 80%;
@@ -1799,6 +1827,7 @@ textarea::placeholder {
     max-width: 80%;
   }
 }
+
 @media (max-width: 1320px) {
   .category_benefits-name {
     max-width: 85%;
@@ -1824,12 +1853,14 @@ textarea::placeholder {
     margin-top: 73px;
   }
 }
+
 @media (max-width: 1304px) {
   .project__info-title a {
     font-size: 24px;
     line-height: 26px;
   }
 }
+
 @media (max-width: 1295px) {
   .project__item-border::before {
     width: 57%;
@@ -1843,6 +1874,7 @@ textarea::placeholder {
     font-size: 25px;
   }
 }
+
 @media (max-width: 1277px) {
   .important__info-title {
     font-size: 28px;
@@ -1854,11 +1886,13 @@ textarea::placeholder {
     }
   }
 }
+
 @media (max-width: 1264px) {
   .category__money-name {
     font-size: 12px;
   }
 }
+
 @media (max-width: 1248px) {
   .ticket-form .form-btn .btn {
     width: 89%;
@@ -1868,6 +1902,7 @@ textarea::placeholder {
     width: 14%;
   }
 }
+
 @media (max-width: 1245px) {
   .project__item-border::before {
     width: 55%;
@@ -1877,11 +1912,13 @@ textarea::placeholder {
     width: 55%;
   }
 }
+
 @media (max-width: 1229px) {
   .cost__wrapper {
     padding: 10px;
   }
 }
+
 @media (max-width: 1222px) {
   .news__title {
     font-size: 49px;
@@ -1895,6 +1932,7 @@ textarea::placeholder {
     max-width: 51%;
   }
 }
+
 @media (max-width: 1221px) {
   .info__number-link a {
     font-size: 55px;
@@ -1904,11 +1942,13 @@ textarea::placeholder {
     margin-top: 204px;
   }
 }
+
 @media (max-width: 1211px) {
   .project__info-title {
     max-width: 71%;
   }
 }
+
 @media (max-width: 1209px) {
   .category__money-box {
     margin-right: 10px;
@@ -1922,14 +1962,19 @@ textarea::placeholder {
     width: 53%;
   }
 }
-@media (max-width: 1192px) {
-  .form-field.form-field-2 {
-    width: 301px;
-  }
 
-  .select2-selection.select2-selection--single {
-    width: 277px;
+@media (max-width: 1200px) {
+  .swiper-btn {
+    width: 10%;
+    top: 11%;
+    left: 57%;
   }
+}
+
+@media (max-width: 1192px) {
+
+
+
 
   .form-field.form-field-1 {
     width: 19%;
@@ -1943,6 +1988,7 @@ textarea::placeholder {
     width: 100%;
   }
 }
+
 @media (max-width: 1186px) {
   .meaning__info-title {
     max-width: 100%;
@@ -1952,6 +1998,9 @@ textarea::placeholder {
     max-width: 85%;
   }
 }
+
+
+
 @media (max-width: 1159px) {
   .project__item-border::before {
     width: 51%;
@@ -1961,6 +2010,7 @@ textarea::placeholder {
     width: 51%;
   }
 }
+
 @media (max-width: 1130px) {
   .category__unity {
     font-size: 15px;
@@ -2000,6 +2050,7 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
+
 @media (max-width: 1123px) {
   .cooperation__info-title {
     font-size: 30px;
@@ -2017,6 +2068,7 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
+
 @media (max-width: 1103px) {
   .attention-text {
     font-size: 16px;
@@ -2026,6 +2078,7 @@ textarea::placeholder {
     max-width: 63%;
   }
 }
+
 @media (max-width: 1127px) {
   .rates__title-1 {
     display: none;
@@ -2042,6 +2095,7 @@ textarea::placeholder {
     max-width: 41%;
   }
 }
+
 @media (max-width: 1092px) {
   .cost__category-wrapper--1 {
     min-width: 15%;
@@ -2072,6 +2126,7 @@ textarea::placeholder {
     margin-top: 44px;
   }
 }
+
 @media (max-width: 1087px) {
   .project__item-border::before {
     width: 47%;
@@ -2089,6 +2144,7 @@ textarea::placeholder {
     width: 228px;
   }
 }
+
 @media (max-width: 1075px) {
   .benefits-name-adap-1 {
     margin-top: 18px;
@@ -2102,11 +2158,13 @@ textarea::placeholder {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 1067px) {
   .category__money-name {
     font-size: 10px;
   }
 }
+
 @media (max-width: 1051px) {
   .project__item-border::before {
     width: 45%;
@@ -2116,27 +2174,32 @@ textarea::placeholder {
     width: 45%;
   }
 }
+
 @media (max-width: 1050px) {
   .info__number-text {
     font-size: 30px;
     max-width: 70%;
   }
 }
+
 @media (max-width: 1042px) {
   .project__info-title {
     max-width: 100%;
   }
 }
+
 @media (max-width: 1031px) {
   .why__item-title {
     font-size: 30px;
   }
 }
+
 @media (max-width: 1029px) {
   .ticket-form .form-btn .btn {
     width: 93%;
   }
 }
+
 @media (max-width: 1024px) {
   .cost__wrapper {
     display: none;
@@ -2327,6 +2390,7 @@ textarea::placeholder {
     display: none;
   }
 }
+
 @media (max-width: 1000px) {
   .important__wrapper {
     display: block;
@@ -2336,6 +2400,7 @@ textarea::placeholder {
     max-height: inherit;
   }
 }
+
 @media (max-width: 997px) {
   .meaning__info-title {
     font-size: 25px;
@@ -2345,11 +2410,13 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
+
 @media (max-width: 988px) {
   .accordion {
     font-size: 23px;
   }
 }
+
 @media (max-width: 984px) {
   .news__title {
     font-size: 44px;
@@ -2367,22 +2434,26 @@ textarea::placeholder {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 972px) {
   .cooperation__info-title {
     font-size: 24px;
   }
 }
+
 @media (max-width: 930px) {
   .attention__box {
     text-align: inherit;
     padding: 20px 0;
   }
 }
+
 @media (max-width: 908px) {
   .project__info-text {
     max-width: 100%;
   }
 }
+
 @media (max-width: 843px) {
   .news__title {
     font-size: 36px;
@@ -2409,6 +2480,7 @@ textarea::placeholder {
     padding: 0 60px;
   }
 }
+
 @media (max-width: 786px) {
   .meaning__info-title {
     font-size: 22px;
@@ -2430,11 +2502,13 @@ textarea::placeholder {
     bottom: 44px;
   }
 }
+
 @media (max-width: 710px) {
   .cooperation__info-title {
     font-size: 22px;
   }
 }
+
 @media (max-width: 700px) {
   .footer {
     margin-top: 100px;
@@ -2553,12 +2627,49 @@ textarea::placeholder {
   .form-field-2 .select2-container {
     width: 100% !important;
   }
+
+  .form-row-1 {
+    display: block;
+  }
+
+  .item.first-width {
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .form-field-2 {
+    display: block;
+  }
+
+  .item.item-popup-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-flex-row {
+    display: block;
+  }
+
+  .input-form-promo {
+    margin-bottom: 20px;
+  }
+
+  .tariff-block .counter {
+    text-align: center;
+  }
+
+  .form-field.form-field-2 .label {
+    margin-top: 14px;
+    margin-left: 0;
+  }
 }
+
 @media (max-width: 687px) {
   .project-arrow-2 {
     bottom: 111px;
   }
 }
+
 @media (max-width: 643px) {
   .project__info-text {
     max-width: 80%;
@@ -2576,6 +2687,7 @@ textarea::placeholder {
     bottom: 67px;
   }
 }
+
 @media (max-width: 640px) {
   .info__number-link a {
     font-size: 36px;
@@ -2586,16 +2698,19 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
+
 @media (max-width: 628px) {
   .header__logo img {
     max-width: 71%;
   }
 }
+
 @media (max-width: 617px) {
   .project__info-title a {
     font-size: 20px;
   }
 }
+
 @media (max-width: 569px) {
   .questions__item-arrow {
     svg {
@@ -2603,11 +2718,13 @@ textarea::placeholder {
     }
   }
 }
+
 @media (max-width: 583px) {
   .project__info-text {
     max-width: 89%;
   }
 }
+
 @media (max-width: 544px) {
   .container {
     padding: 0 25px;
@@ -2625,12 +2742,14 @@ textarea::placeholder {
     bottom: 109px;
   }
 }
+
 @media (max-width: 540px) {
   .questions__item-arrow {
     margin-right: 0;
     margin-top: 15px;
   }
 }
+
 @media (max-width: 529px) {
   .project__info-text {
     max-width: 100%;
@@ -2640,16 +2759,19 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
+
 @media (max-width: 485px) {
   .prarr {
     bottom: 66px;
   }
 }
+
 @media (max-width: 483px) {
   .important__info-text {
     display: none;
   }
 }
+
 @media (max-width: 464px) {
   .project__info-text {
     max-width: 100%;
@@ -2663,6 +2785,7 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
+
 @media (max-width: 449px) {
   .news__wrapper {
     margin-top: 20px;
@@ -2672,6 +2795,7 @@ textarea::placeholder {
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 424px) {
   .important__info-title {
     font-size: 20px;
@@ -2690,6 +2814,7 @@ textarea::placeholder {
     margin-top: 9px;
   }
 }
+
 @media (max-width: 420px) {
   .project-arrow {
     bottom: 132px;
@@ -2707,21 +2832,38 @@ textarea::placeholder {
     max-width: 50%;
   }
 }
+
+@media (max-width: 406px) {
+  .check-text {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 401px) {
   .project-arrow-2 {
     bottom: 151px;
   }
 }
+
+@media (max-width: 400px) {
+  .fancybox-content {
+    padding: 10px;
+
+  }
+}
+
 @media (max-width: 389px) {
   .header__contacts-ticket .btn-header {
     padding: 12px 39px;
   }
 }
+
 @media (max-width: 385px) {
   .meaning__number {
     margin-right: 30px;
   }
 }
+
 @media (max-width: 382px) {
   .project-arrow {
     bottom: 158px;
@@ -2739,6 +2881,7 @@ textarea::placeholder {
     }
   }
 }
+
 @media (max-width: 363px) {
   .project-arrow {
     bottom: 180px;
@@ -2752,6 +2895,7 @@ textarea::placeholder {
     bottom: 95px;
   }
 }
+
 @media (max-width: 362px) {
   .news__title {
     font-size: 30px;
@@ -2773,11 +2917,19 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
+
+@media (max-width: 340px) {
+  .flex-inner {
+    padding: 10px 0;
+  }
+}
+
 @media (max-width: 335px) {
   .info__number-link a {
     font-size: 35px;
   }
 }
+
 @media(min-width: 1024px) {
   .swiper_cost {
     display: none;
@@ -2807,16 +2959,19 @@ textarea::placeholder {
 .cost__adaptive-all.visible {
   display: block;
 }
+
 @media (max-width: 1482px) and (min-width: 700px) {
   .select2-dropdown.select-drop-open.select2-dropdown--below {
     width: 427px !important;
   }
 }
+
 @media (max-width: 1192px) and (min-width: 700px) {
   .select2-dropdown.select-drop-open.select2-dropdown--below {
     width: 301px !important;
   }
 }
+
 @media (max-width: 1087px) and (min-width: 700px) {
   .select2-dropdown.select-drop-open.select2-dropdown--below {
     width: 263px !important;

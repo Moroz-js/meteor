@@ -24,10 +24,18 @@ new Swiper('.swiper', {
     nextEl: '.swiper-btn',
   },
   slidesPerView: 3,
+  centeredSlides: true,
 
   centeredSlides: true,
-  spaceBetween: 30,
+  spaceBetween: 20,
   loop: true,
+
+  breakpoints: {
+    700: {
+      slidesPerView: 3,
+
+    },
+  }
 });
 
 
