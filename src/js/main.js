@@ -23,7 +23,7 @@ new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-btn',
   },
-  slidesPerView: 3,
+  slidesPerView: 1,
   centeredSlides: true,
 
   centeredSlides: true,
@@ -31,7 +31,7 @@ new Swiper('.swiper', {
   loop: true,
 
   breakpoints: {
-    700: {
+    701: {
       slidesPerView: 3,
 
     },

@@ -1114,14 +1114,9 @@ select {
   padding: 80px;
 }
 
-.gallery-swiper {
-  overflow: visible !important;
-}
 
-.swiper-slide-prev {
-  width: 60% !important;
-  transition: all 0.3s ease-in-out !important;
-}
+
+
 
 .swiper-slide {
   transition: all 0.3s ease-in-out;
@@ -2560,6 +2555,12 @@ textarea::placeholder {
     display: block;
   }
 
+  .swiper-btn {
+    width: 10%;
+    top: 0%;
+    left: 45%;
+  }
+
   .rates__title {
     margin-top: 20px;
   }
@@ -2568,9 +2569,18 @@ textarea::placeholder {
     margin-bottom: 0;
   }
 
+  .swiper {
+    padding-top: 40px !important;
+  }
+
   .rates__scheme {
     display: block;
   }
+
+  .gallery-swiper {
+    margin-top: 0;
+  }
+
 
   .rates__scheme-img {
     order: 0;
@@ -2747,6 +2757,10 @@ textarea::placeholder {
   .questions__item-arrow {
     margin-right: 0;
     margin-top: 15px;
+  }
+
+  .accordion {
+    padding: 15px 5px;
   }
 }
 
@@ -2934,6 +2948,18 @@ textarea::placeholder {
   .swiper_cost {
     display: none;
   }
+}
+
+@media(min-width: 701px) {
+  .swiper-slide-prev {
+    width: 60% !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  .gallery-swiper {
+    overflow: visible !important;
+  }
+
 }
 
 .cost__adaptive-item {
