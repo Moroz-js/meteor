@@ -1,0 +1,77 @@
+.header__nav-link.header__nav-info {
+  color: #101010;
+  border-color: #101010;
+}
+
+
+.header__contacts-number.header__contacts-number-info {
+  a {
+    color: #101010;
+  }
+}
+
+.btn-header.btn-header-info {
+  background-color: #B5234D;
+}
+
+
+.information-wrapper {
+  max-width: 548px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.information {
+  margin-top: 79px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #B5234D;
+}
+
+.information-text {
+  margin-top: 60px;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #101010;
+    margin-bottom: 20px;
+  }
+}
+
+
+.information__adress {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information__adress-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #101010;
+}
+
+.information__adress-text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #101010;
+  max-width: 86%;
+}
+
+
+.information__adress-title-map {
+  text-align: center;
+  margin-top: 60px;
+}
