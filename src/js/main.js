@@ -23,7 +23,7 @@ new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-btn',
   },
-  slidesPerView: 3,
+  slidesPerView: 1,
   centeredSlides: true,
 
   centeredSlides: true,
@@ -31,13 +31,12 @@ new Swiper('.swiper', {
   loop: true,
 
   breakpoints: {
-    700: {
+    701: {
       slidesPerView: 3,
 
     },
   }
 });
-
 
 
 
@@ -57,13 +56,17 @@ $('.phone-field').inputmask("+7(999)999-9999");
 jQuery.validator.addMethod("checkMaskPhone", function (value, element) {
   return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
 });
+jQuery.validator.addMethod("placeholder", function (value, element) {
+  return value != $(element).attr("placeholder");
+}, jQuery.validator.messages.required);
 
 $("#feedback").validate({
   rules: {
     name: "required",
     email: {
       required: true,
-      email: true
+      email: true,
+      placeholder: true
     },
     message: {
       required: true,
@@ -78,11 +81,23 @@ $("#feedback").validate({
     }
   },
   messages: {
-    email: 'Неверно введён e-mail',
+    email: "Неверно введён e-mail",
     name: 'Необходимо заполнить поле',
-    agree: 'Необходимо дать согласие',
+    agree: 'Необходимо дать согласие на обработку персональных данных',
     message: 'Необходимо заполнить поле',
     phone: 'Введите корректный номер телефона'
+
+  },
+  errorPlacement: function (error, element) {
+    if (element.attr("type") == "checkbox") {
+      error.insertAfter($(element).parents('.checkbox-value'));
+    } else if (element.attr('name') == 'message') {
+      element.attr("placeholder", error[0].outerText);
+      error.insertBefore($(element));
+    } else {
+      element.attr("placeholder", error[0].outerText);
+      error.insertBefore($(element).parents('.txt-field'));
+    }
 
   },
 
