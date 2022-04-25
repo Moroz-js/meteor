@@ -5,6 +5,7 @@
 @import "settings"; // подключения компонентов страницы
 @import "./components/header"; // header
 @import "info";
+
 .header {
   background-image: url("../img/header-bg.png");
   background-size: cover;
@@ -60,7 +61,7 @@
     .btn-header {
       border: 1px solid #B5234D;
       border-radius: 170px;
-      padding: 15px 40px;
+      padding: 12px 40px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
     }
@@ -378,7 +379,7 @@ select {
   flex-direction: column;
   justify-content: space-between;
   background: #fff;
-  padding: 16px;
+  padding: 16px 16px 16px 40px;
   margin-right: 5px;
   height: 90px;
   box-shadow: 0 4px 4px rgb(219 219 219 / 11%);
@@ -399,6 +400,7 @@ select {
 
 .form-field.form-field-2 {
   padding: 0;
+  padding-left: 40px;
 }
 
 .form-field.form-field-3 {
@@ -407,7 +409,7 @@ select {
 
 .form-field.form-field-2 .label {
   margin-top: 14px;
-  margin-left: 27px;
+
 }
 
 .label {
@@ -430,13 +432,12 @@ select {
 }
 
 .form-field-2 .select2-container {
-  padding: 16px;
+  padding: 16px 16px 16px 0;
 }
 
 .ticket-form .form-field input.input {
   border: none;
   background: transparent;
-  text-align: center;
   height: 30px;
   font-weight: 500;
   color: #000;
@@ -453,6 +454,7 @@ select {
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   text-overflow: ellipsis;
+  padding-left: 0;
 }
 
 .select2-results__option {
