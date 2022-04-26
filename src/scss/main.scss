@@ -72,9 +72,7 @@
   background-color: #B5234D;
   transition: all 0.3s ease-in-out;
 }
-
 // pop-up
-
 .month {
   color: #962344;
   font-weight: 500;
@@ -84,21 +82,20 @@
 }
 
 .daterangepicker .drp-calendar.left {
-  padding: 0px 17px 27px 17px;
+  padding: 0 17px 27px;
 }
 
-.daterangepicker .calendar-table th,
-.daterangepicker .calendar-table td {
+.daterangepicker .calendar-table td,
+.daterangepicker .calendar-table th {
   border-radius: 0;
 }
 
-.daterangepicker .calendar-table th,
-.daterangepicker .calendar-table td {
+.daterangepicker .calendar-table td,
+.daterangepicker .calendar-table th {
   min-width: 23px !important;
   border-radius: 0;
   width: 23px !important;
 }
-
 
 .daterangepicker .calendar-table table {
   width: 100%;
@@ -106,8 +103,6 @@
   border-spacing: inherit;
   border-collapse: inherit;
 }
-
-
 
 .table-condensed {
   border-spacing: 4px !important;
@@ -132,7 +127,6 @@
     border-spacing: 2em 2em;
   }
 
-
   .daterangepicker {
     border-spacing: 2em 2em;
   }
@@ -140,16 +134,12 @@
   tr:nth-child(2) {
     display: none;
   }
-
-
 }
 
 td.weekend:last-child {
   background-color: #B5234D !important;
   color: #fff;
 }
-
-
 
 .fancybox-content {
   padding: 40px;
@@ -373,7 +363,7 @@ label.label.label-red {
 }
 
 .item-popup-flex .flex-inner {
-  line-height: 30px
+  line-height: 30px;
 }
 
 .tooltip-button {
@@ -474,8 +464,7 @@ select {
 }
 
 .form-field.form-field-2 {
-  padding: 0;
-  padding-left: 40px;
+  padding: 0 0 0 40px;
 }
 
 .form-field.form-field-3 {
@@ -484,7 +473,6 @@ select {
 
 .form-field.form-field-2 .label {
   margin-top: 14px;
-
 }
 
 .label {
@@ -588,8 +576,6 @@ select {
   border-radius: 5px;
 }
 
-
-
 .form-btn {
   max-width: 333px;
   width: 100%;
@@ -614,12 +600,12 @@ select {
 .btn.btn-default {
   background: #B5234D;
   color: #fff;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-default:hover {
   background: #9d0f37e0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .counter .minus,
@@ -643,9 +629,7 @@ select {
   text-align: center;
   background: transparent;
 }
-
 // attention
-
 .attention__wrapper {
   background: #101010;
   border-radius: 0 0 5px 5px;
@@ -662,9 +646,7 @@ select {
   line-height: 130%;
   color: #FFFFFF;
 }
-
 // news
-
 .news__title {
   font-weight: 600;
   font-size: 80px;
@@ -694,9 +676,7 @@ select {
   color: #101010;
   max-width: 34%;
 }
-
 // why
-
 .why__title {
   margin-top: 180px;
   font-weight: 500;
@@ -736,9 +716,7 @@ select {
   color: #101010;
   margin-top: 10px;
 }
-
 // meaning
-
 .meaning__wrapper {
   display: flex;
   justify-content: space-between;
@@ -751,7 +729,6 @@ select {
 
 .meaning__wrapper-number {
   display: flex;
-
 }
 
 .meaning__number {
@@ -821,9 +798,7 @@ select {
     border-radius: 5px;
   }
 }
-
 // cost
-
 .category_children {
   display: flex;
 }
@@ -993,9 +968,7 @@ select {
   max-width: 40%;
   margin-right: 32px;
 }
-
 // rates
-
 .rates__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1079,9 +1052,7 @@ select {
   align-items: center;
   margin-top: 40px;
 }
-
 // important
-
 .important {
   margin-top: 180px;
 }
@@ -1126,9 +1097,7 @@ select {
     }
   }
 }
-
 // questions
-
 .questions__wrapper {
   margin-top: 60px;
 }
@@ -1227,10 +1196,6 @@ select {
   padding: 80px;
 }
 
-
-
-
-
 .swiper-slide {
   transition: all 0.3s ease-in-out;
 
@@ -1238,7 +1203,6 @@ select {
     border-radius: 5px;
   }
 }
-
 
 .accordion {
   font-weight: 500;
@@ -1324,9 +1288,7 @@ select {
 .menu-btn.active .menu-btn__plus::before {
   transform: rotate(180deg);
 }
-
 // gallery
-
 .gallery {
   margin-bottom: 100px;
 }
@@ -1342,17 +1304,17 @@ select {
   left: 57%;
   cursor: pointer;
 }
-
 // validate
+
 #agree-error {
   display: block;
   padding-bottom: 5px;
 }
 
-#name-error,
-#phone-error,
 #email-error,
-#message-error {
+#message-error,
+#name-error,
+#phone-error {
   font-weight: 500;
   font-size: 16px;
   line-height: 117%;
@@ -1393,11 +1355,7 @@ select {
     color: #B5234D;
   }
 }
-
-
-
 // form
-
 .cooperation__info {
   max-width: 31%;
 
@@ -1551,9 +1509,7 @@ textarea::placeholder {
   line-height: 135%;
   color: #101010;
 }
-
 // location
-
 .location__item-title {
   margin-top: 40px;
   font-weight: 500;
@@ -1589,9 +1545,7 @@ textarea::placeholder {
   margin-top: 17px;
   filter: grayscale(100%);
 }
-
 // project
-
 .project__wrapper {
   margin-top: 40px;
 }
@@ -1616,13 +1570,12 @@ textarea::placeholder {
     max-height: 294px;
     border-radius: 5px;
   }
-
   margin-right: 20px;
 }
 
 .project__info-title {
   position: relative;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   a {
     font-weight: 500;
@@ -1636,7 +1589,7 @@ textarea::placeholder {
 .project-arrow {
   position: absolute;
   right: 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .project__info-title:hover {
@@ -1647,12 +1600,12 @@ textarea::placeholder {
   }
 
   .project-arrow {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transform: rotate(45deg);
   }
 
   .project-arrow path {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     stroke: #B5234D;
     fill: #B5234D;
   }
@@ -1704,11 +1657,7 @@ textarea::placeholder {
 .project__item-3 {
   position: relative;
 }
-
-
-
 // footer
-
 .footer {
   background: #101010;
   margin-top: 180px;
@@ -1854,14 +1803,12 @@ textarea::placeholder {
 .cost__wrapper-adaptive {
   margin-top: 40px;
 }
-
 // media
 @media (max-width: 1664px) {
   .project-arrow {
     min-width: 14px;
   }
 }
-
 @media (max-width: 1655px) {
   .project__item-border::before {
     right: -26px;
@@ -1871,7 +1818,6 @@ textarea::placeholder {
     right: -26px;
   }
 }
-
 @media (max-width: 1609px) {
   .project__item-border::before {
     width: 67%;
@@ -1881,7 +1827,6 @@ textarea::placeholder {
     width: 67%;
   }
 }
-
 @media (max-width: 1605px) {
   .category_benefits {
     margin-right: 59px;
@@ -1895,7 +1840,6 @@ textarea::placeholder {
     margin-top: 21px;
   }
 }
-
 @media (max-width: 1550px) {
   .news__title {
     font-size: 70px;
@@ -1909,33 +1853,27 @@ textarea::placeholder {
     width: 65%;
   }
 }
-
 @media (max-width: 1519px) {
   .meaning__info-title {
     font-size: 30px;
   }
 }
-
 @media (max-width:1516px) {
   .important__info-title {
     max-width: 100%;
   }
 }
-
 @media (max-width:1493px) {
   .category__money-name {
     font-size: 13px;
   }
 }
-
 @media (max-width:1492px) {
   .location__item-title {
     font-size: 30px;
   }
 }
-
 @media (max-width:1482px) {}
-
 @media (max-width:1468px) {
   .project__item-border::before {
     width: 63%;
@@ -1945,7 +1883,6 @@ textarea::placeholder {
     width: 63%;
   }
 }
-
 @media (max-width:1452px) {
   .cost__wrapper {
     padding: 20px;
@@ -1967,7 +1904,6 @@ textarea::placeholder {
     top: 23rem;
   }
 }
-
 @media (max-width:1415px) {
   .project__info-title a {
     font-size: 30px;
@@ -1981,7 +1917,6 @@ textarea::placeholder {
     width: 61%;
   }
 }
-
 @media (max-width:1412px) {
   .category__money-name {
     font-size: 13px;
@@ -1991,7 +1926,6 @@ textarea::placeholder {
     margin-top: 64px;
   }
 }
-
 @media (max-width:1386px) {
   .news__title {
     font-size: 60px;
@@ -2008,14 +1942,11 @@ textarea::placeholder {
     max-width: 42%;
   }
 }
-
-
 @media (max-width: 1348px) {
   .select2.select2-container.select2-container--default {
     width: 485px !important;
   }
 }
-
 @media (max-width: 1345px) {
   .project__item-border::before {
     width: 59%;
@@ -2025,7 +1956,6 @@ textarea::placeholder {
     width: 59%;
   }
 }
-
 @media (max-width: 1327px) {
   .meaning__info-title {
     max-width: 80%;
@@ -2035,7 +1965,6 @@ textarea::placeholder {
     max-width: 80%;
   }
 }
-
 @media (max-width: 1320px) {
   .category_benefits-name {
     max-width: 85%;
@@ -2061,14 +1990,12 @@ textarea::placeholder {
     margin-top: 73px;
   }
 }
-
 @media (max-width: 1304px) {
   .project__info-title a {
     font-size: 24px;
     line-height: 26px;
   }
 }
-
 @media (max-width: 1295px) {
   .project__item-border::before {
     width: 57%;
@@ -2082,7 +2009,6 @@ textarea::placeholder {
     font-size: 25px;
   }
 }
-
 @media (max-width: 1277px) {
   .project-arrow {
     width: 15px;
@@ -2099,29 +2025,21 @@ textarea::placeholder {
     }
   }
 }
-
 @media (max-width: 1276px) {
   .category__money-name {
     font-size: 11px;
   }
 }
-
 @media (max-width: 1268px) {
   .select2.select2-container.select2-container--default {
     width: 466px !important;
   }
 }
-
-
-
 @media (max-width: 1248px) {
-
-
   .form-field.form-field-1 {
     width: 14%;
   }
 }
-
 @media (max-width: 1245px) {
   .project__item-border::before {
     width: 55%;
@@ -2131,13 +2049,11 @@ textarea::placeholder {
     width: 55%;
   }
 }
-
 @media (max-width: 1229px) {
   .cost__wrapper {
     padding: 10px;
   }
 }
-
 @media (max-width: 1222px) {
   .news__title {
     font-size: 49px;
@@ -2151,7 +2067,6 @@ textarea::placeholder {
     max-width: 51%;
   }
 }
-
 @media (max-width: 1221px) {
   .info__number-link a {
     font-size: 55px;
@@ -2165,9 +2080,6 @@ textarea::placeholder {
     width: 430px !important;
   }
 }
-
-
-
 @media (max-width: 1209px) {
   .category__money-box {
     margin-right: 10px;
@@ -2181,7 +2093,6 @@ textarea::placeholder {
     width: 53%;
   }
 }
-
 @media (max-width: 1200px) {
   .swiper-btn {
     width: 10%;
@@ -2189,7 +2100,6 @@ textarea::placeholder {
     left: 57%;
   }
 }
-
 @media (max-width: 1192px) {
   .form-field.form-field-1 {
     width: 17%;
@@ -2199,7 +2109,6 @@ textarea::placeholder {
     width: 385px !important;
   }
 }
-
 @media (max-width: 1186px) {
   .meaning__info-title {
     max-width: 100%;
@@ -2209,9 +2118,6 @@ textarea::placeholder {
     max-width: 85%;
   }
 }
-
-
-
 @media (max-width: 1159px) {
   .project__item-border::before {
     width: 51%;
@@ -2221,13 +2127,11 @@ textarea::placeholder {
     width: 51%;
   }
 }
-
 @media (max-width: 1156px) {
   .select2.select2-container.select2-container--default {
     width: 384px !important;
   }
 }
-
 @media (max-width: 1130px) {
   .category__unity {
     font-size: 15px;
@@ -2267,13 +2171,11 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
-
 @media (max-width: 1126px) {
   .select2.select2-container.select2-container--default {
     width: 354px !important;
   }
 }
-
 @media (max-width: 1123px) {
   .cooperation__info-title {
     font-size: 30px;
@@ -2291,7 +2193,6 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
-
 @media (max-width: 1103px) {
   .attention-text {
     font-size: 16px;
@@ -2301,7 +2202,6 @@ textarea::placeholder {
     max-width: 63%;
   }
 }
-
 @media (max-width: 1127px) {
   .rates__title-1 {
     display: none;
@@ -2318,13 +2218,11 @@ textarea::placeholder {
     max-width: 41%;
   }
 }
-
 @media (max-width: 1116px) {
   .form-field.form-field-3 {
     width: 14%;
   }
 }
-
 @media (max-width: 1092px) {
   .cost__category-wrapper--1 {
     min-width: 15%;
@@ -2355,9 +2253,7 @@ textarea::placeholder {
     margin-top: 44px;
   }
 }
-
 @media (max-width: 1087px) {}
-
 @media (max-width: 1075px) {
   .benefits-name-adap-1 {
     margin-top: 18px;
@@ -2371,19 +2267,16 @@ textarea::placeholder {
     margin-top: 40px;
   }
 }
-
 @media (max-width: 1074px) {
   .select2.select2-container.select2-container--default {
     width: 322px !important;
   }
 }
-
 @media (max-width: 1067px) {
   .category__money-name {
     font-size: 10px;
   }
 }
-
 @media (max-width: 1051px) {
   .project__item-border::before {
     width: 45%;
@@ -2393,44 +2286,37 @@ textarea::placeholder {
     width: 45%;
   }
 }
-
 @media (max-width: 1051px) {
   .select2.select2-container.select2-container--default {
     width: 314px !important;
   }
 }
-
 @media (max-width: 1050px) {
   .info__number-text {
     font-size: 30px;
     max-width: 70%;
   }
 }
-
 @media (max-width: 1042px) {
   .project__info-title {
     max-width: 100%;
   }
 }
-
 @media (max-width: 1041px) {
   .select2.select2-container.select2-container--default {
     width: 295px !important;
   }
 }
-
 @media (max-width: 1031px) {
   .why__item-title {
     font-size: 30px;
   }
 }
-
 @media (max-width: 1029px) {
   .ticket-form .form-btn .btn {
     width: 93%;
   }
 }
-
 @media (max-width: 1024px) {
   .cost__wrapper {
     display: none;
@@ -2521,7 +2407,6 @@ textarea::placeholder {
   .project__item-img img {
     max-width: 100%;
     max-height: 100%;
-
   }
 
   .project__info-title {
@@ -2533,8 +2418,6 @@ textarea::placeholder {
     right: 0;
     width: 9px;
   }
-
-
 
   .project__item-img {
     margin-right: 0;
@@ -2630,7 +2513,6 @@ textarea::placeholder {
     display: none;
   }
 }
-
 @media (max-width: 1000px) {
   .important__wrapper {
     display: block;
@@ -2640,7 +2522,6 @@ textarea::placeholder {
     max-height: inherit;
   }
 }
-
 @media (max-width: 997px) {
   .meaning__info-title {
     font-size: 25px;
@@ -2650,13 +2531,11 @@ textarea::placeholder {
     max-width: 100%;
   }
 }
-
 @media (max-width: 988px) {
   .accordion {
     font-size: 23px;
   }
 }
-
 @media (max-width: 984px) {
   .news__title {
     font-size: 44px;
@@ -2674,26 +2553,22 @@ textarea::placeholder {
     margin-top: 40px;
   }
 }
-
 @media (max-width: 972px) {
   .cooperation__info-title {
     font-size: 24px;
   }
 }
-
 @media (max-width: 930px) {
   .attention__box {
     text-align: inherit;
     padding: 20px 0;
   }
 }
-
 @media (max-width: 908px) {
   .project__info-text {
     max-width: 100%;
   }
 }
-
 @media (max-width: 843px) {
   .news__title {
     font-size: 36px;
@@ -2720,20 +2595,16 @@ textarea::placeholder {
     padding: 0 60px;
   }
 }
-
 @media (max-width: 786px) {
   .meaning__info-title {
     font-size: 22px;
   }
-
 }
-
 @media (max-width: 710px) {
   .cooperation__info-title {
     font-size: 22px;
   }
 }
-
 @media (max-width: 700px) {
   .footer {
     margin-top: 100px;
@@ -2761,13 +2632,12 @@ textarea::placeholder {
     display: block;
   }
 
-
   .modal__feedback-content_title {
     font-size: 20px;
   }
 
   .footer__wrapper {
-    padding: 40px 0 80px 0;
+    padding: 40px 0 80px;
   }
 
   .why__title {
@@ -2811,7 +2681,7 @@ textarea::placeholder {
 
   .swiper-btn {
     width: 10%;
-    top: 0%;
+    top: 0;
     left: 45%;
   }
 
@@ -2834,7 +2704,6 @@ textarea::placeholder {
   .gallery-swiper {
     margin-top: 0;
   }
-
 
   .rates__scheme-img {
     order: 0;
@@ -2898,7 +2767,7 @@ textarea::placeholder {
 
   .item.first-width {
     max-width: 100%;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .form-field-2 {
@@ -2927,16 +2796,11 @@ textarea::placeholder {
     margin-left: 0;
   }
 }
-
-
-
 @media (max-width: 643px) {
   .project__info-text {
     max-width: 80%;
   }
-
 }
-
 @media (max-width: 640px) {
   .info__number-link a {
     font-size: 36px;
@@ -2947,19 +2811,16 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
-
 @media (max-width: 628px) {
   .header__logo img {
     max-width: 71%;
   }
 }
-
 @media (max-width: 617px) {
   .project__info-title a {
     font-size: 20px;
   }
 }
-
 @media (max-width: 569px) {
   .questions__item-arrow {
     svg {
@@ -2967,13 +2828,11 @@ textarea::placeholder {
     }
   }
 }
-
 @media (max-width: 583px) {
   .project__info-text {
     max-width: 89%;
   }
 }
-
 @media (max-width: 544px) {
   .container {
     padding: 0 25px;
@@ -2986,10 +2845,7 @@ textarea::placeholder {
   .btn-form {
     padding: 14px 72px;
   }
-
-
 }
-
 @media (max-width: 540px) {
   .questions__item-arrow {
     margin-right: 0;
@@ -3000,13 +2856,11 @@ textarea::placeholder {
     padding: 15px 5px;
   }
 }
-
 @media (max-width: 536px) {
   .panel {
     padding: 0;
   }
 }
-
 @media (max-width: 529px) {
   .project__info-text {
     max-width: 100%;
@@ -3020,31 +2874,25 @@ textarea::placeholder {
     padding: 20px 0;
   }
 }
-
 @media (max-width: 485px) {
   .prarr {
     bottom: 66px;
   }
 }
-
 @media (max-width: 483px) {
   .important__info-text {
     display: none;
   }
 }
-
 @media (max-width: 464px) {
   .project__info-text {
     max-width: 100%;
   }
 
-
-
   .project__info-title {
     max-width: 100%;
   }
 }
-
 @media (max-width: 450px) {
   .swiper-slide {
     img {
@@ -3054,10 +2902,8 @@ textarea::placeholder {
 
   .meaning_img img {
     height: 300px;
-
   }
 }
-
 @media (max-width: 449px) {
   .news__wrapper {
     margin-top: 20px;
@@ -3072,10 +2918,7 @@ textarea::placeholder {
     top: -1%;
     left: 41%;
   }
-
-
 }
-
 @media (max-width: 424px) {
   .important__info-title {
     font-size: 20px;
@@ -3094,12 +2937,7 @@ textarea::placeholder {
     margin-top: 9px;
   }
 }
-
 @media (max-width: 420px) {
-
-
-
-
   .prarr {
     bottom: 95px;
   }
@@ -3108,35 +2946,27 @@ textarea::placeholder {
     max-width: 50%;
   }
 }
-
 @media (max-width: 406px) {
   .check-text {
     font-size: 14px;
   }
 }
-
-
 @media (max-width: 400px) {
   .fancybox-content {
     padding: 10px;
-
   }
 }
-
 @media (max-width: 389px) {
   .header__contacts-ticket .btn-header {
     padding: 12px 39px;
   }
 }
-
 @media (max-width: 385px) {
   .meaning__number {
     margin-right: 30px;
   }
 }
-
 @media (max-width: 382px) {
-
   .header__logo {
     max-width: 38%;
 
@@ -3145,9 +2975,6 @@ textarea::placeholder {
     }
   }
 }
-
-
-
 @media (max-width: 362px) {
   .news__title {
     font-size: 30px;
@@ -3169,25 +2996,21 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
-
 @media (max-width: 340px) {
   .flex-inner {
     padding: 10px 0;
   }
 }
-
 @media (max-width: 335px) {
   .info__number-link a {
     font-size: 35px;
   }
 }
-
 @media(min-width: 1025px) {
   .swiper_cost {
     display: none;
   }
 }
-
 @media(min-width: 701px) {
   .swiper-slide-prev {
     width: 60% !important;
@@ -3197,7 +3020,6 @@ textarea::placeholder {
   .gallery-swiper {
     overflow: visible !important;
   }
-
 }
 
 .cost__adaptive-item {
@@ -3223,29 +3045,27 @@ textarea::placeholder {
 .cost__adaptive-all.visible {
   display: block;
 }
-
 // @media (max-width: 1482px) and (min-width: 700px) {
 //   .select2-dropdown.select-drop-open.select2-dropdown--below {
 //     width: 427px !important;
 //   }
 // }
-
 // @media (max-width: 1192px) and (min-width: 700px) {
 //   .select2-dropdown.select-drop-open.select2-dropdown--below {
 //     width: 301px !important;
 //   }
 // }
-
 // @media (max-width: 1087px) and (min-width: 700px) {
 //   .select2-dropdown.select-drop-open.select2-dropdown--below {
 //     width: 263px !important;
 //   }
 // }
-
-
 @media (min-width: 564px) {
   .daterangepicker .drp-calendar.left .calendar-table {
-    padding-right: 0px;
+    padding-right: 0;
   }
+}
 
+.month {
+  padding-bottom: 0;
 }

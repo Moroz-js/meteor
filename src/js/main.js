@@ -4,7 +4,7 @@ let menuBtn = document.querySelectorAll('.menu-btn');
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function (e) {
+  acc[i].addEventListener("click", function(e) {
     console.log(this)
 
     if (e.target.classList.contains('menu-btn__plus') || e.target.classList.contains('accordion')) {
@@ -53,10 +53,10 @@ function openFeedback() {
 $('.phone-field').inputmask("+7(999)999-9999");
 
 
-jQuery.validator.addMethod("checkMaskPhone", function (value, element) {
+jQuery.validator.addMethod("checkMaskPhone", function(value, element) {
   return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
 });
-jQuery.validator.addMethod("placeholder", function (value, element) {
+jQuery.validator.addMethod("placeholder", function(value, element) {
   return value != $(element).attr("placeholder");
 }, jQuery.validator.messages.required);
 
@@ -88,7 +88,7 @@ $("#feedback").validate({
     phone: 'Введите корректный номер телефона'
 
   },
-  errorPlacement: function (error, element) {
+  errorPlacement: function(error, element) {
     if (element.attr("type") == "checkbox") {
       error.insertAfter($(element).parents('.checkbox-value'));
     } else if (element.attr('name') == 'message') {
@@ -101,7 +101,7 @@ $("#feedback").validate({
 
   },
 
-  submitHandler: function (form, event) {
+  submitHandler: function(form, event) {
     event.preventDefault();
 
     openFeedback()
@@ -154,5 +154,3 @@ listItems.forEach((item, i) => {
 
   })
 });
-
-
