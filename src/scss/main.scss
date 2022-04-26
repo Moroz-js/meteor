@@ -75,6 +75,82 @@
 
 // pop-up
 
+.month {
+  color: #962344;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 20px;
+}
+
+.daterangepicker .drp-calendar.left {
+  padding: 0px 17px 27px 17px;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+  border-radius: 0;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+  min-width: 23px !important;
+  border-radius: 0;
+  width: 23px !important;
+}
+
+
+.daterangepicker .calendar-table table {
+  width: 100%;
+  margin: 0;
+  border-spacing: inherit;
+  border-collapse: inherit;
+}
+
+
+
+.table-condensed {
+  border-spacing: 4px !important;
+
+  td {
+    min-width: 23px;
+    width: 23px;
+  }
+
+  td.off {
+    font-weight: 500;
+    min-width: 23px;
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    line-height: 110%;
+    margin: 5px;
+    text-align: center;
+    color: #121212;
+    background: rgba(245, 245, 245, 0.92);
+    text-decoration: none;
+    border-spacing: 2em 2em;
+  }
+
+
+  .daterangepicker {
+    border-spacing: 2em 2em;
+  }
+
+  tr:nth-child(2) {
+    display: none;
+  }
+
+
+}
+
+td.weekend:last-child {
+  background-color: #B5234D !important;
+  color: #fff;
+}
+
+
+
 .fancybox-content {
   padding: 40px;
   border-radius: 5px;
@@ -382,7 +458,6 @@ select {
   padding: 16px 16px 16px 40px;
   margin-right: 5px;
   height: 90px;
-  box-shadow: 0 4px 4px rgb(219 219 219 / 11%);
   border-radius: 5px;
 }
 
@@ -667,6 +742,7 @@ select {
 .meaning__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .meaning__wrapper-info {
@@ -675,7 +751,7 @@ select {
 
 .meaning__wrapper-number {
   display: flex;
-  margin-top: 40px;
+
 }
 
 .meaning__number {
@@ -747,6 +823,14 @@ select {
 }
 
 // cost
+
+.category_children {
+  display: flex;
+}
+
+.children {
+  margin-right: 6px;
+}
 
 .cost {
   margin-bottom: 100px;
@@ -906,7 +990,7 @@ select {
   font-size: 16px;
   line-height: 135%;
   color: #818181;
-  max-width: 30%;
+  max-width: 40%;
   margin-right: 32px;
 }
 
@@ -3157,3 +3241,11 @@ textarea::placeholder {
 //     width: 263px !important;
 //   }
 // }
+
+
+@media (min-width: 564px) {
+  .daterangepicker .drp-calendar.left .calendar-table {
+    padding-right: 0px;
+  }
+
+}
