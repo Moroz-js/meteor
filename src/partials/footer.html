@@ -1,18 +1,18 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/tippy-bundle.umd.min.js"></script>
-<script src="/js/slick.min.js"></script>
-<script src="/js/sly.js"></script>
-<script src="/js/select2.min.js"></script>
-<script src="/js/moment.min.js"></script>
-<script src="/js/jquery.vide.js"></script>
-<script src="/js/daterangepicker.js"></script>
-<script src="/js/jquery.fancybox.min.js"></script>
-<script src="/js/jquery.validate.min.js"></script>
-<script src="/js/jquery.main.js?16"></script>
-<script src="js/jquery.inputmask.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/tippy-bundle.umd.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/sly.js"></script>
+<script src="./js/select2.min.js"></script>
+<script src="./js/moment.min.js"></script>
+<script src="./js/jquery.vide.js"></script>
+<script src="./js/daterangepicker.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/jquery.main.js?16"></script>
+<script src="./js/jquery.inputmask.min.js"></script>
+<script src="./js/custom.js"></script>
 @include('ticket-popup.html')
 
 <footer class="footer">
@@ -27,17 +27,20 @@
             Не можете найти причал? Остались вопросы? Позвоните нам!
           </div>
           <div class="footer__img">
-            <picture>
-              <source srcset="../img/footer-logo.avif" type="image/avif">
-              <source srcset="../img/footer-logo.webp" type="image/webp">
-              <img loading="lazy" src="../img/footer-logo.png" class="image" alt="">
-            </picture>
+            <a href="#">
+              <picture>
+                <source srcset="./img/footer-logo.avif" type="image/avif">
+                <source srcset="./img/footer-logo.webp" type="image/webp">
+                <img loading="lazy" src="./img/footer-logo.png" class="image" alt="">
+              </picture>
+            </a>
+
           </div>
         </div>
         <div class="footer__social">
           <div class="footer__social-box">
             <div class="social-link">
-              <a href="#">ВКонтакте</a>
+              <a href="https://vk.com/meteorvodohod">ВКонтакте</a>
             </div>
             <div class="social-link">
               <a href="mailto:meteor@riverport.spb.ru">meteor@riverport.spb.ru</a>
@@ -56,13 +59,18 @@
       </div>
 
     </div>
-    <div class="footer__img-1">
-      <picture>
-        <source srcset="../img/footer-logo.avif" type="image/avif">
-        <source srcset="../img/footer-logo.webp" type="image/webp">
-        <img loading="lazy" src="../img/footer-logo.png" class="image" alt="">
-      </picture>
+    <div class="footer__last-adaptive">
+      <div class="footer__img-1">
+        <a href="#">
+          <picture>
+            <source srcset="../img/footer-logo.avif" type="image/avif">
+            <source srcset="../img/footer-logo.webp" type="image/webp">
+            <img loading="lazy" src="../img/footer-logo.png" class="image" alt="">
+          </picture>
+        </a>
+
+      </div>
+      <div class="footer__vodohod-text-1">АО «ВодоходЪ. Пассажирский Порт» 2022</div>
     </div>
-    <div class="footer__vodohod-text-1">АО «ВодоходЪ. Пассажирский Порт» 2022</div>
   </div>
 </footer>
