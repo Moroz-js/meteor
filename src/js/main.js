@@ -48,6 +48,13 @@ new Swiper('.swiper', {
 });
 
 
+new Swiper('.info-license-wrapper-slide', {
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  loop: true,
+});
+
+
 
 
 let modalFeedback = document.querySelector('.modal__feedback');
@@ -166,3 +173,14 @@ listItems.forEach((item, i) => {
 
 
 
+let destinationList = document.querySelector('.destination-list')
+let destinationListItems = document.querySelectorAll('.item');
+
+
+
+destinationList.addEventListener('click', function (e) {
+  destinationListItems.forEach(item => {
+    item.classList.remove('active')
+  })
+  e.target.parentElement.parentElement.classList.add('active')
+})
