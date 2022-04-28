@@ -48,6 +48,13 @@ new Swiper('.swiper', {
 });
 
 
+new Swiper('.info-license-wrapper-slide', {
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  loop: true,
+});
+
+
 
 
 let modalFeedback = document.querySelector('.modal__feedback');
