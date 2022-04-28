@@ -166,3 +166,15 @@ listItems.forEach((item, i) => {
 
 
 
+let destinationList = document.querySelector('.destination-list')
+let destinationListItems = document.querySelectorAll('.item');
+
+
+
+destinationList.addEventListener('click', function(e) {
+  destinationListItems.forEach(item => {
+    item.classList.remove('active')
+  })
+  console.log(e)
+  e.target.parentElement.parentElement.classList.add('active')
+})
