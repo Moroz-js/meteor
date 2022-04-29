@@ -17,9 +17,9 @@ for (i = 0; i < acc.length; i++) {
         this.classList.add('active')
 
        }
-     
 
-      
+
+
       let panel = this.querySelector('.panel');
 
       if (panel.style.maxHeight) {
@@ -185,7 +185,6 @@ destinationList.addEventListener('click', function (e) {
   destinationListItems.forEach(item => {
     item.classList.remove('active')
   })
-  console.log(e)
   e.target.parentElement.parentElement.classList.add('active')
 });
 
