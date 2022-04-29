@@ -15,6 +15,7 @@
 
 .btn-header.btn-header-info {
   background-color: #B5234D;
+  transition: all .3s ease-in-out;
 }
 
 .info-grid {
@@ -56,6 +57,11 @@
   }
 }
 
+
+.btn-header.btn-header-info:hover {
+ background-color: #962344;
+ transition: all .3s ease-in-out;
+}
 
 .info-grid-info-timetable {
   grid-template-columns: 0.4fr 0.3fr 1.2fr 0.3fr;
@@ -124,14 +130,25 @@
   grid-row: 1;
 }
 
+.information__adress-marsh {
+      margin-top: 34px;
+}
+
 .info__work-location-text {
   p {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     padding: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #B5234D;
+  }
+}
+
+
+.info__work-location-text.info__work-text-number {
+  p {
+        margin: 0 0 39px 0;
   }
 }
 
@@ -562,6 +579,10 @@
 
   .info-license-wrapper-slide {
     display: block;
+  }
+
+  .info__document-link a {
+    font-size: 16px;
   }
 }
 

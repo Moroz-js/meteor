@@ -118,6 +118,13 @@
   }
 }
 
+#tippy-9, #tippy-10 {
+  .tippy-box {
+    max-width: 480px !important;
+    width: 368px;
+  }
+}
+
 #tippy-2,
 #tippy-3,
 #tippy-7,
@@ -482,6 +489,10 @@ td.weekend:last-child {
   line-height: 30px;
 }
 
+.modal__feedback-content {
+  max-width: 81%;
+}
+
 .flex-inner-stand-1 {
   padding-right: 44px;
 }
@@ -653,6 +664,16 @@ td.weekend:last-child {
       display: none;
     }
   }
+}
+
+
+.swiper-btn {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .item.first-width {
@@ -1208,6 +1229,18 @@ th.prev span::before {
   display: none;
 }
 
+.children.children-tooltip {
+  position: relative;
+}
+
+.tulltip-children {
+  position: relative;
+  svg {
+    position: absolute;
+    right: -18px;
+  }
+}
+
 .cost__wrapper {
   border: 1px solid #101010;
   position: relative;
@@ -1649,6 +1682,15 @@ th.prev span::before {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #101010;
+    max-width: 80%;
+    margin: 0 0 15px;
+  }
+
   p {
     font-weight: 400;
     font-size: 16px;
@@ -1704,7 +1746,11 @@ th.prev span::before {
 // gallery
 .gallery {
   margin-bottom: 100px;
+  height: 700;
 }
+
+
+
 
 .swiper {
   margin-top: 40px;
@@ -1713,9 +1759,11 @@ th.prev span::before {
 .swiper-btn {
   position: absolute;
   z-index: 10;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   top: 11%;
   left: 57%;
   cursor: pointer;
+
 }
 
 // validate
@@ -1781,6 +1829,22 @@ th.prev span::before {
 
 .cooperation__wrapper {
   display: flex;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.txt-field input:focus {
+  border: 1px solid #B5234D;
+}
+
+textarea:focus {
+  border: 1px solid #B5234D;
 }
 
 .cooperation__form {
@@ -2365,6 +2429,13 @@ textarea::placeholder {
   }
 }
 
+@media (max-width:1423px) {
+  .gallery {
+
+    height: 452px;
+  }
+}
+
 @media (max-width:1415px) {
   .project__info-title a {
     font-size: 30px;
@@ -2609,10 +2680,13 @@ textarea::placeholder {
 }
 
 @media (max-width: 1200px) {
-  .swiper-btn {
+  .swiper-btn  {
     width: 10%;
     top: 11%;
     left: 57%;
+    svg {
+      width: 74%;
+    }
   }
 }
 
@@ -2623,6 +2697,13 @@ textarea::placeholder {
 
   .select2.select2-container.select2-container--default {
     width: 337px !important;
+  }
+}
+
+@media (max-width: 1190px) {
+  .gallery {
+
+    height: 352px;
   }
 }
 
@@ -2648,6 +2729,23 @@ textarea::placeholder {
 
 
 
+@media (max-width: 1157px) {
+  .category__unity {
+    font-size: 15px;
+  }
+  .benefits-name-adap-1 {
+    margin-top: 35px;
+  }
+  .category_benefits.category_benefits-border.category_benefits-lg {
+    margin-top: 72px;
+  }
+  .category_benefits-name.benefits-number-1 {
+    margin-top: 57px;
+  }
+  .money__benefits-1 {
+    margin-top: 84px;
+  }
+}
 @media (max-width: 1138px) {
   .select2.select2-container.select2-container--default {
     width: 292px !important;
@@ -2656,7 +2754,7 @@ textarea::placeholder {
 
 @media (max-width: 1130px) {
   .category__unity {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .benefits-name-adap-1 {
@@ -2788,6 +2886,9 @@ textarea::placeholder {
 @media (max-width: 1075px) {
   .benefits-name-adap-1 {
     margin-top: 18px;
+  }
+  .category__unity {
+    font-size: 15px;
   }
 
   .benefits-name-adap-2 {
@@ -3207,7 +3308,13 @@ textarea::placeholder {
 @media (max-width: 700px) {
   .footer {
     margin-top: 100px;
+    padding-bottom: 40px;
   }
+
+
+.swiper-btn svg {
+  width: 100%;
+}
 
   .tariff-list-border::before {
     display: none;
@@ -3233,6 +3340,34 @@ textarea::placeholder {
   .adaptive__category-money {
     margin-right: 20px;
   }
+
+#tippy-4 {
+  transform: translate3d(101px, 15px, 0px) !important;
+  .tippy-box {
+    width: 364px;
+    max-width: 216px !important;
+  }
+}
+
+#tippy-5 {
+    transform: translate3d(115.5px, 15px, 0px) !important;
+      .tippy-box {
+      max-width: 224px !important;
+      }
+}
+#tippy-9 {
+    transform: translate3d(115.5px, 15px, 0px) !important;
+      .tippy-box {
+      max-width: 224px !important;
+      }
+}
+#tippy-10 {
+    transform: translate3d(115.5px, 15px, 0px) !important;
+      .tippy-box {
+      max-width: 224px !important;
+      }
+}
+
 
   .svg-tooltip {
     right: 68px;
@@ -3719,6 +3854,11 @@ textarea::placeholder {
 @media (max-width: 385px) {
   .meaning__number {
     margin-right: 30px;
+  }
+
+  .modal__feedback-content {
+    background: #B5234D;
+    padding: 38px;
   }
 }
 
