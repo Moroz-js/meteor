@@ -376,7 +376,7 @@ td.weekend:last-child {
   font-size: 16px;
   line-height: 135%;
   color: #101010;
-  max-width: 39%;
+  max-width: 100%;
   margin-bottom: 80px;
 }
 
@@ -3312,10 +3312,28 @@ textarea::placeholder {
   }
 
 
+#buy-confirmation-popup {
+  padding: 20px 10px;
+}
+.fancybox-slide--html .fancybox-close-small {
+  right: 4px;
+  top: 28px;
+}
+.buy-confirmation-popup h2 {
+  max-width: 71%;
+}
+
 .swiper-btn svg {
   width: 100%;
 }
 
+.popup-btn-wrapper {
+  display: block;
+}
+
+.order-details-wrapper.order-details-wrapper-1 {
+  display: block;
+}
   .tariff-list-border::before {
     display: none;
   }
@@ -3616,6 +3634,11 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 576px) {
+  .buy-confirmation-popup h2 {
+    max-width: 100%;
+  }
+}
 @media (max-width: 544px) {
   .container {
     padding: 0 25px;
@@ -3708,6 +3731,11 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 476px) {
+  .buy-confirmation-popup h2 {
+    max-width: 86%;
+  }
+}
 @media (max-width: 471px) {
   .tooltip-button svg {
     max-width: 12px;
@@ -3835,10 +3863,7 @@ textarea::placeholder {
     padding: 10px;
   }
 
-  .fancybox-slide--html .fancybox-close-small {
-    right: 0px;
-    top: 17px;
-  }
+
 }
 
 @media (max-width: 389px) {
