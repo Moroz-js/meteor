@@ -5,19 +5,22 @@ let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function (e) {
-    console.log(this)
-
     if (e.target.classList.contains('menu-btn__plus') || e.target.classList.contains('accordion')) {
-      acc.forEach(item => {
+      if(this.classList.contains('active')) {
+        this.classList.remove('active')
+       } else {
+          acc.forEach(item => {
         item.classList.remove('active');
         let i = item.querySelector('.panel')
-        console.log(i)
         i.style.maxHeight = null
       })
+        this.classList.add('active')
 
-      this.classList.toggle("active");
+       }
+     
+
+      
       let panel = this.querySelector('.panel');
-      console.log(acc)
 
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
