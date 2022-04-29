@@ -178,10 +178,15 @@ let destinationListItems = document.querySelectorAll('.item');
 
 
 
-destinationList.addEventListener('click', function(e) {
+destinationList.addEventListener('click', function (e) {
   destinationListItems.forEach(item => {
     item.classList.remove('active')
   })
   console.log(e)
   e.target.parentElement.parentElement.classList.add('active')
-})
+});
+
+
+$("body").on("mousedown", ".swiper-pag", function (e) {
+  e.preventDefault();
+});
