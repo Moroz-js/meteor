@@ -54,7 +54,7 @@ new Swiper('.swiper', {
 new Swiper('.info-license-wrapper-slide', {
   slidesPerView: 1.4,
   spaceBetween: 10,
-  loop: true,
+  loop: false,
 });
 
 
@@ -191,4 +191,10 @@ destinationList.addEventListener('click', function (e) {
 
 $("body").on("mousedown", ".swiper-pag", function (e) {
   e.preventDefault();
+});
+
+
+
+$('.phone-field').on('input', function() {
+    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });

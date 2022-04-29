@@ -271,13 +271,13 @@ thead {
 
 .input-form:focus,
 .input:focus {
-  border: 1px solid #B5234D;
+  border: 1px solid #101010;
 }
 
 
 .radio-dn:focus {
   span {
-    border-color: #B5234D;
+    border-color: #101010;
   }
 }
 
@@ -675,6 +675,7 @@ td.weekend:last-child {
 
 
 .swiper-btn {
+  outline: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1847,12 +1848,12 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .txt-field input:focus {
-  border: 1px solid #B5234D;
+  border: 1px solid #101010;
 }
 
 textarea:focus {
   outline: none !important;
-  border-color: #B5234D;
+  border-color: #101010;
 
 }
 
@@ -2989,6 +2990,9 @@ textarea::placeholder {
   .cost__wrapper {
     display: none;
   }
+  .project__info-text {
+    margin-bottom: 40px;
+  }
 
   .header__nav-link {
     display: none;
@@ -3081,11 +3085,27 @@ textarea::placeholder {
   }
 
   .project__item-border::before {
-    display: none;
+left: 0;
+display: block;
+content: "";
+position: inherit;
+border-bottom: 1px solid #c4c4c4;
+height: 1px;
+width: 100%;
+right: -17px;
+top: -15px;
   }
 
   .project__item-border::after {
-    display: none;
+left: 0;
+display: block;
+content: "";
+position: inherit;
+border-bottom: 1px solid #c4c4c4;
+height: 1px;
+width: 100%;
+right: -17px;
+top: -15px;
   }
 
   .project__item-img img {
@@ -3306,9 +3326,18 @@ textarea::placeholder {
 
 
 
+@media (max-width: 713px) {
+  .tariff-list-border::before {
+    right: -63px;
+
+  }
+}
 @media (max-width: 710px) {
   .cooperation__info-title {
     font-size: 22px;
+  }
+  .tariff-list-border::before {
+    right: -58px;
   }
 }
 
@@ -3318,6 +3347,19 @@ textarea::placeholder {
   .footer {
     margin-top: 100px;
     padding-bottom: 40px;
+  }
+
+  .project__item {
+    margin: 0;
+  }
+
+
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: 0px;
+  }
+
+  .info__document-link-1 {
+    padding-left: 30px;
   }
 
 
@@ -3444,7 +3486,10 @@ textarea::placeholder {
   }
 
   .why__title {
-    margin-top: 180px;
+    margin-top: 100px;
+  }
+  .gallery {
+    height: auto;
   }
 
   .important {
@@ -3482,11 +3527,11 @@ textarea::placeholder {
     display: block;
   }
 
-  .swiper-btn {
-    width: 10%;
-    top: 0;
-    left: 45%;
-  }
+.swiper-btn {
+  width: 16%;
+  top: 0;
+  left: 41%;
+}
 
   .rates__title {
     margin-top: 20px;
@@ -3514,7 +3559,7 @@ textarea::placeholder {
 
 
   .flex-inner:focus {
-    border: 1px solid #B5234D;
+    border: 1px solid #101010;
   }
 
   .rates__scheme-color {
@@ -3766,6 +3811,13 @@ textarea::placeholder {
 
 }
 
+@media (max-width: 466px) {
+  .swiper-btn {
+    width: 22%;
+    top: 0;
+    left: 39%;
+  }
+}
 @media (max-width: 464px) {
   .project__info-text {
     max-width: 100%;
@@ -3782,6 +3834,15 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 460px) {
+  input.error, .txtar.error {
+
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
 @media (max-width: 451px) {
   .header__logo {
     width: 161px;
@@ -3813,6 +3874,13 @@ textarea::placeholder {
     width: 20%;
     top: -1%;
     left: 41%;
+  }
+
+  .tippy-content {
+    font-size: 10px;
+  }
+  .tippy-box {
+    padding: 5px 10px;
   }
 }
 
@@ -3881,7 +3949,10 @@ textarea::placeholder {
   .fancybox-content {
     padding: 10px;
   }
-
+.fancybox-slide--html .fancybox-close-small {
+  right: 4px;
+  top: 8px;
+}
 
 }
 
@@ -3926,7 +3997,7 @@ textarea::placeholder {
   }
 
   .why__title {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .container {
@@ -3970,6 +4041,26 @@ textarea::placeholder {
   }
 }
 
+@media(max-width: 320px) {
+  .project__item-img img {
+    width: 300px;
+    height: 300px;
+  }
+  .location__item-map {
+    width: 300px;
+    height: 300px;
+  }
+  #tippy-1, #tippy-6 {
+    .tippy-box {
+      width: 110px;
+    }
+
+  }
+  #tippy-4 .tippy-box {
+
+    max-width: 169px !important;
+  }
+}
 @media(min-width: 1025px) {
   .swiper_cost {
     display: none;
@@ -4035,3 +4126,6 @@ textarea::placeholder {
 .month {
   padding-bottom: 0;
 }
+
+
+
