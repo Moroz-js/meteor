@@ -118,10 +118,17 @@
   }
 }
 
-#tippy-9, #tippy-10 {
+#tippy-9 {
   .tippy-box {
     max-width: 480px !important;
     width: 368px;
+  }
+}
+
+#tippy-10 {
+  .tippy-box {
+    max-width: 480px !important;
+    width: 416px;
   }
 }
 
@@ -1844,7 +1851,9 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 textarea:focus {
-  border: 1px solid #B5234D;
+  outline: none !important;
+  border-color: #B5234D;
+
 }
 
 .cooperation__form {
@@ -3311,6 +3320,16 @@ textarea::placeholder {
     padding-bottom: 40px;
   }
 
+
+
+.order-details {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.order-det-text {
+  margin-bottom: 40px;
+}
 
 #buy-confirmation-popup {
   padding: 20px 10px;
